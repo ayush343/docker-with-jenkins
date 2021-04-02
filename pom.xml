@@ -15,9 +15,8 @@
     <plugins>
         <plugin>
             <!-- Build an executable JAR -->
-            <groupId>com.javadocker</groupId>
-            <artifactId>docker-with-jenkins</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
             <configuration>
                 <archive>
                     <manifest>
