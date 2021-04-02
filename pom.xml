@@ -10,9 +10,34 @@
   <name>docker-with-jenkins</name>
   <url>http://maven.apache.org</url>
 
-<build>
-<finalName>docker-with-jenkins</finalName>
+
+ <build>
+    <plugins>
+        <plugin>
+            <!-- Build an executable JAR -->
+            <groupId>com.javadocker</groupId>
+            <artifactId>docker-with-jenkins</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <configuration>
+                <archive>
+                    <manifest>
+                        <mainClass>docker_with_jenkins.App</mainClass>
+                    </manifest>
+                </archive>
+            </configuration>
+        </plugin>
+    </plugins>
 </build>
+
+
+
+<!-- <build>
+<finalName>docker-with-jenkins</finalName>
+
+<manifest> 
+     <mainClass>org.arpit.java2blog.AppMain</mainClass>
+            </manifest>
+</build> -->
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
